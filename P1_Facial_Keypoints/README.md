@@ -1,4 +1,6 @@
 
+Project instructions are found in the [Udacity README](README_Udacity.md).
+
 ## OpenCV functions used:
 
 imread, cvColor, rectangle, resize, CascadeClassifier(...).detectMultiScale(...)
