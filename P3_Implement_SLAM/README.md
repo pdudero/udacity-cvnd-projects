@@ -20,7 +20,7 @@ I chose to perform additional "extra credit" work implementing a version of onli
 1. The x and y xi vectors are separated. Omega is the same for both.  
 1. The robot attemps a solution with every pose, using the most recent pose. A snapshot of the world, the truth information and the robot's estimates is taken and then collected into a video.
 
-The class still expects a fixed number of landmarks, and so the robot is not able to solve the equation until all landmarks are sensed, but once they are, the locations are updated with every pose. A potential improvement for the future would be to allow omega and xi to grow as new landmarks are detected, which is truer to a real world scenario. An additional challenge would be to determine during the course of mapping whether two (or more) detected landmarks are really the same landmark.
+The class still expects a fixed number of landmarks, and so the robot is not able to solve the equation until all landmarks are sensed, but once they are, the locations are updated with every pose. A potential improvement for the future would be to "get more real-world", by removing all prior knowledge of landmarks, such as the number of them, or which landmark was just sensed. This means allowing omega and xi to grow as new landmarks are detected. It also means determining whether two measurements represents the same landmark or two different ones.
 
 ## Results:
 
