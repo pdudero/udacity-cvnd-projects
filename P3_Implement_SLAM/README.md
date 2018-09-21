@@ -3,6 +3,8 @@ Project instructions are found in the [Udacity README](README_Udacity.md).
 
 ## Method:
 
+A summary of the foundation of the GraphSLAM method can be found in [this notebook](GraphSLAM_Derivation.ipynb).
+
 [The Robot Moving and Sensing notebook](1.%20Robot%20Moving%20and%20Sensing.ipynb) defines a robot class. The student is tasked with implementing the sense function, given a set of randomly generated landmarks.
 
 The implementation of the robot class is subsequently moved to the [robot_class.py](robot_class.py) file.
@@ -18,7 +20,7 @@ I chose to perform additional "extra credit" work implementing a version of onli
 1. The x and y xi vectors are separated. Omega is the same for both.  
 1. The robot attemps a solution with every pose, using the most recent pose. A snapshot of the world, the truth information and the robot's estimates is taken and then collected into a video.
 
-The class still expects a fixed number of landmarks, and so the robot is not able to solve the equation until all landmarks are sensed, but once they are, the locations are updated with every pose. A potential improvement for the future would be to allow omega and xi to grow as new landmarks are detected, which is truer to a real world scenario.
+The class still expects a fixed number of landmarks, and so the robot is not able to solve the equation until all landmarks are sensed, but once they are, the locations are updated with every pose. A potential improvement for the future would be to allow omega and xi to grow as new landmarks are detected, which is truer to a real world scenario. An additional challenge would be to determine during the course of mapping whether two (or more) detected landmarks are really the same landmark.
 
 ## Results:
 
